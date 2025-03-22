@@ -5,7 +5,10 @@
 int main(int argc, const char * argv[]) {
     double a,b,c;
     double x1,x2,d;
-    printf("Type a,b,c: ");
+    char choice;
+    
+    do {
+    printf("напиши a,b,c: ");
     scanf("%lf%lf%lf", &a, &b, &c);
     d = b*b-4*a*c;
     
@@ -18,6 +21,12 @@ int main(int argc, const char * argv[]) {
         x1 = -b*sqrt(d)/(2*a);
         printf("x1 %lf \n",x1);
     } else {
-        printf("No sqr \n");
+        printf("Нет корня \n");
     }
+        printf("Продолжить? (y/n): ");
+        scanf(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+
+    printf("канец \n");
+    return 0;
 }
