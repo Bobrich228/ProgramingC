@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1748007462 source:e:\education\lab11\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	"func.h"
+
+1748007930 e:\education\lab11\func.h
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<stdarg.h>
+
