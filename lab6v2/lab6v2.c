@@ -8,7 +8,7 @@ int main() {
     FILE *f1, *f2;
     char s[150];
     f1 = fopen("names.txt", "r");
-    f2 = fopen("out.txt", "w");
+    f2 = fopen("result.txt", "w");
     
     if (f1 == NULL) {
         perror("names.txt");
