@@ -1,0 +1,8 @@
+ivan guryashin 2003 male 1.79
+nikiros lavandos 2006 female 1.80
+vlados osos 2007 male 1.60
+pavel mavel 1980 male 1.60
+ivan guryashin 2006 female 1.75
+ivan guryashin 2005 female 1.74
+ivan guryashin 2023 male 1.70
+ivan guryashin 2001 female 1.80
