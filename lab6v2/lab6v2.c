@@ -11,7 +11,7 @@ int main() {
     f2 = fopen("result.txt", "w");
     
     if (f1 == NULL) {
-        perror("names.txt");
+        printf("error");
         return 1;
     }
     
