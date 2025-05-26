@@ -3,13 +3,13 @@
 #include <string.h>
 
 
-    struct humen{
+    typedef struct humen{
         char name[20];
         char surname[20];
         int year_of_born;
         char gender[6];
         double height;
-    };
+    }; humen
 
 int main(){
     int choise,i,j,pr_fld,scnd_fld,n=0;
@@ -17,32 +17,27 @@ int main(){
     struct humen *mas1=NULL;
     struct humen *mas2=NULL;
 
-
     struct humen temp[1];
 
-
-
-    printf("enter data location (1.manual entry | 2.from .txt): ");
+    printf("1. vvod  2. iz txt: ");
     scanf("%d",&choise);
-
-
 
     if (choise==1){
 
-        printf("enter numb");
+        printf("vvedite cifry");
         scanf("%d",&n);
         mas1=malloc(n*sizeof(struct humen));
         mas2=malloc(n*sizeof(struct humen));
     for (i=0;i<n;i++){
-        printf("enter name: ");
+        printf("vvedite ima: ");
         scanf("%s", &mas1[i].name);
-        printf("enter surname: ");
+        printf("vvedite surname: ");
         scanf("%s", &mas1[i].surname);
-        printf("enter year of born: ");
+        printf("vvedite god: ");
         scanf("%d", &mas1[i].year_of_born);
-        printf("enter gender: ");
+        printf("vvedite gender: ");
         scanf("%s", &mas1[i].gender);
-        printf("enter height: ");
+        printf("vvedite rost: ");
         scanf("%lf", &mas1[i].height);
         printf("\n");
     }}
@@ -50,7 +45,7 @@ int main(){
         FILE *f1;
         f1=fopen("data.txt","r");
         if (f1==NULL){
-            printf("OPENING ERROR");
+            printf("eror");
             return 1;
         }
         char name[20], surname[20], gender[6];
@@ -73,12 +68,12 @@ int main(){
 
     while (choise!=0){
     choise=0;
-    printf("\nChiose primary field for sort (1. Name | 2. Surname | 3. year of born | 4. Gender | 5. Height): \n");
+    printf("\n1. Name  2. Surname  3. year of born  4. Gender  5. Height: \n");
     scanf("%d",&pr_fld);
-    printf("Chiose secondary field for sort (1. Name | 2. Surname | 3. year of born | 4. Gender | 5. Height): \n");
+    printf("1. Name  2. Surname  3. year of born  4. Gender  5. Height: \n");
     scanf("%d",&scnd_fld);
     if (pr_fld==scnd_fld){
-        printf("The choise is the same, try another one\n");
+        printf("debil?\n");
         choise++;
     }}
 
